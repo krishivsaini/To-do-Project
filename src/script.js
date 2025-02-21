@@ -31,6 +31,11 @@ function addTask(){
         displayTasks();
     }
 }; 
+function DeleteAllTask(){
+    todo = [];
+    saveToLocalStorage();
+    displayTasks();
+};
 function displayTasks() {
     todoList.innerHTML = "";
     todo.forEach((item, index) => {
